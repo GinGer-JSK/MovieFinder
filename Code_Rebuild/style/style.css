@@ -1,0 +1,54 @@
+/* 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+* {
+  font-family: "Jersey 10 Charted", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-family: "Shadows Into Light", cursive;
+  font-style: normal;
+  font-size: 25px;
+  color: white;
+
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/44bfb1a9-9b0e-4c56-a977-ca034a95ca08/ddqeicg-92a6cf68-80c8-4102-92c6-9924433f7ba2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQ0YmZiMWE5LTliMGUtNGM1Ni1hOTc3LWNhMDM0YTk1Y2EwOFwvZGRxZWljZy05MmE2Y2Y2OC04MGM4LTQxMDItOTJjNi05OTI0NDMzZjdiYTIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TOmC7zEit5Z_asimfa2PaP5Vr0alhVVkaHnGFuhL_cQ");
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 20px;
+  padding: 20px;
+  height: auto;
+}
+
+.movieSearchBox {
+  display: flex;
+  margin: 30px auto 0 auto;
+  padding: 20px;
+  background-color: red;
+
+  border-radius: 10px;
+  padding: 20px;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto auto auto;
+}
+
+.card-body {
+  background-color: red;
+  color: white;
+}
+
+@media all {
+  body {
+    background-color: black;
+  }
+}

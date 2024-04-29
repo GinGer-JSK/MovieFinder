@@ -5,11 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Finder</title>
     <link rel="stylesheet" href="./style/style.css" />
-    <script src="./src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/movie.js"></script>
+    <script type="module" src="./src/search.js"></script>
   </head>
   <body>
-    <header></header>
-    <form></form>
-    <ul></ul>
+    <header class="header">
+      <h1>Movie Finder</h1>
+    </header>
+
+    <from class="movieSearchBox" onsubmit="search_movie(event)">
+      <input class="search-box" />
+      <button>Search</button>
+    </from>
+
+    <ul>
+
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://scsgozneamae10236445.cdn.ntruss.com/data2/content/image/2018/07/02/.cache/512/201807020659995.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">범죄도시1</h5>
+              <p class="card-text">마동석 행님이 줠라 패는 영화다</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://dimg.donga.com/wps/SPORTS/IMAGE/2022/04/04/112677901.1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">범죄도시2</h5>
+              <p class="card-text">마동석 행님이 줠라 패는 영화다</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://i.namu.wiki/i/V9goIIR__RXEeZBHmAoae1VjRW-phKcMsVSeVdmU9PzuUMMuOCthDBBouKipDuUoPtFGzofQxJkPVCmuc3Nw4Q.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">범죄도시3</h5>
+              <p class="card-text">마동석 행님이 줠라 패는 영화다</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2024/03/25/6cb59639-cd28-4efa-93f5-187dca842cb2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">범죄도시4</h5>
+              <p class="card-text">마동석 행님이 줠라 패는 영화다</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMjJfNSAg/MDAxNDg3NzI0MjQzNzM5.1lVCSNpeV_wLCrkAXolwhHixQYgpetlH29HQcWUY1t4g.-LlMVsqtbJfQvWAadQCF6XpLucYQ6QQVi7edISl8mqAg.JPEG.designpress2016/%EB%B6%80%EC%82%B0%ED%96%89_5.jpg?type=w800"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">부 산 행</h5>
+              <p class="card-text">부산행은 마동석 행님이 줠라 패는 영화다</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMjJfNSAg/MDAxNDg3NzI0MjQzNzM5.1lVCSNpeV_wLCrkAXolwhHixQYgpetlH29HQcWUY1t4g.-LlMVsqtbJfQvWAadQCF6XpLucYQ6QQVi7edISl8mqAg.JPEG.designpress2016/%EB%B6%80%EC%82%B0%ED%96%89_5.jpg?type=w800"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">부 산 행</h5>
+              <p class="card-text">부산행은 마동석 행님이 줠라 패는 영화다</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMjJfNSAg/MDAxNDg3NzI0MjQzNzM5.1lVCSNpeV_wLCrkAXolwhHixQYgpetlH29HQcWUY1t4g.-LlMVsqtbJfQvWAadQCF6XpLucYQ6QQVi7edISl8mqAg.JPEG.designpress2016/%EB%B6%80%EC%82%B0%ED%96%89_5.jpg?type=w800"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">부 산 행</h5>
+              <p class="card-text">부산행은 마동석 행님이 줠라 패는 영화다</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMjJfNSAg/MDAxNDg3NzI0MjQzNzM5.1lVCSNpeV_wLCrkAXolwhHixQYgpetlH29HQcWUY1t4g.-LlMVsqtbJfQvWAadQCF6XpLucYQ6QQVi7edISl8mqAg.JPEG.designpress2016/%EB%B6%80%EC%82%B0%ED%96%89_5.jpg?type=w800"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">부 산 행</h5>
+              <p class="card-text">부산행은 마동석 행님이 줠라 패는 영화다</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMjJfNSAg/MDAxNDg3NzI0MjQzNzM5.1lVCSNpeV_wLCrkAXolwhHixQYgpetlH29HQcWUY1t4g.-LlMVsqtbJfQvWAadQCF6XpLucYQ6QQVi7edISl8mqAg.JPEG.designpress2016/%EB%B6%80%EC%82%B0%ED%96%89_5.jpg?type=w800"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">부 산 행</h5>
+              <p class="card-text">부산행은 마동석 행님이 줠라 패는 영화다</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMjJfNSAg/MDAxNDg3NzI0MjQzNzM5.1lVCSNpeV_wLCrkAXolwhHixQYgpetlH29HQcWUY1t4g.-LlMVsqtbJfQvWAadQCF6XpLucYQ6QQVi7edISl8mqAg.JPEG.designpress2016/%EB%B6%80%EC%82%B0%ED%96%89_5.jpg?type=w800"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">부 산 행</h5>
+              <p class="card-text">부산행은 마동석 행님이 줠라 패는 영화다</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMjJfNSAg/MDAxNDg3NzI0MjQzNzM5.1lVCSNpeV_wLCrkAXolwhHixQYgpetlH29HQcWUY1t4g.-LlMVsqtbJfQvWAadQCF6XpLucYQ6QQVi7edISl8mqAg.JPEG.designpress2016/%EB%B6%80%EC%82%B0%ED%96%89_5.jpg?type=w800"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">부 산 행</h5>
+              <p class="card-text">부산행은 마동석 행님이 줠라 패는 영화다</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMjJfNSAg/MDAxNDg3NzI0MjQzNzM5.1lVCSNpeV_wLCrkAXolwhHixQYgpetlH29HQcWUY1t4g.-LlMVsqtbJfQvWAadQCF6XpLucYQ6QQVi7edISl8mqAg.JPEG.designpress2016/%EB%B6%80%EC%82%B0%ED%96%89_5.jpg?type=w800"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">부 산 행</h5>
+              <p class="card-text">부산행은 마동석 행님이 줠라 패는 영화다</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
+  </mainFrame>
+  
+    </ul>
   </body>
 </html>
